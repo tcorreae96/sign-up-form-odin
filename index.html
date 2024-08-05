@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div id="container">
-		<div id="container-left">
-			<div>
-				<img id="odin-logo" src="images/odin-lined.png" alt="odin-logo">
-				ODIN
-			</div>
-		</div>
-		<div id="container-right">
-			<div>
-				<p>
-					This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. 
-				</p>
-				<p>
-					You <em>know</em> you want to.
-				</p>
-			</div>
-			<div id="form">
-				<form action="/">
-					<fieldset>
-						<legend>Let's do this!</legend>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-left">
+        <div id="container-left-logo">
+          <img
+            id="odin-logo"
+            src="images/odin-lined.png"
+            alt="odin-logo"
+            width="80px"
+          />
+          <p>ODIN</p>
+        </div>
+      </div>
+      <div id="container-right">
+        <div id="text-top-form">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div id="form">
+          <form action="/">
+            <fieldset>
+              <legend>Let's do this!</legend>
+              <div class="input-form">
+                <label for="user_first_name">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="user_first_name"
+                  id="user_first_name"
+                />
+              </div>
 
-						<label for="user_first_name">FIRST NAME</label>
-						<input type="text" name="user_first_name" id="user_first_name">
+              <div class="input-form">
+                <label for="user_last_name">LAST NAME</label>
+                <input type="text" name="user_last_name" id="user_last_name" />
+              </div>
 
-						<label for="user_last_name">LAST NAME</label>
-						<input type="text" name="user_last_name" id="user_last_name">
+              <div class="input-form">
+                <label for="user_email">EMAIL</label>
+                <input type="email" name="user_email" id="user_email" />
+              </div>
 
-						<label for="user_email">EMAIL</label>
-						<input type="email" name="user_email" id="user_email">
-
-						<label for="user_phone_number">PHONE NUMBER</label>
-						<input type="tel" name="user_phone_number" id="user_phone_number">
-
-						<label for="user_password">PASSWORD</label>
-						<input type="password" name="user_password" id="user_password">
-
-						<label for="confirm_user_password">CONFIRM PASSWORD</label>
-						<input type="password" name="confirm_user_password" id="confirm_user_password">
-					</fieldset>
-					<button type="submit">Create Account</button>
-				</form>
-			<div>
-				<p>Already have an account? <a href="./index.html">Log in</a></p>
-			</div>
-			</div>
-		</div>
-	</div>
-</body>
+              <div class="input-form">
+                <label for="user_phone_number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="user_phone_number"
+                  id="user_phone_number"
+                />
+              </div>
+              <div class="input-form">
+                <label for="user_password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="user_password"
+                  id="user_password"
+                />
+              </div>
+              <div class="input-form">
+                <label for="confirm_user_password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirm_user_password"
+                  id="confirm_user_password"
+                />
+              </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+          </form>
+          <div>
+            <p>Already have an account? <a href="./index.html">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
