@@ -3,16 +3,18 @@
 	src: url(./fonts/Norse-Bold.otf);
 }
 
-body {
+body, html {
 	margin: 0;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 12%;
+	padding-right: 12%;
 	background-color: #2a2a2a;
+	height: 100%;
 }
 
 #container {
 	display: flex;
-	height: 100vh;
+	justify-content: center;
+	height: 100%;
 }
 
 #container-right {
@@ -26,8 +28,9 @@ body {
 	display: flex;
 	align-items: center;
 	background-size: cover;
+	justify-content: center;
 }
-
+ 
 #container-left-logo {
 	display: flex;
 	justify-content: center;
@@ -38,7 +41,7 @@ body {
 	background-color: rgb(0,0,0, 0.5);
 	padding: 1rem;
 	width: 100%;
-	margin-bottom: 24rem;
+	margin-bottom: 65%;
 }
 
 #container-left-logo > p {
@@ -48,7 +51,7 @@ body {
 #text-top-form {
 	font-weight: 800;
 	margin: 2rem;
-	margin-top: 10rem;
+	margin-top: 8rem;
 	font-size: 1.5rem;
 }
 
@@ -58,15 +61,27 @@ body {
 	box-shadow: 12px 5px 10px 0px rgba(0,0,0,0.55);
 }
 
+fieldset {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1rem;
+	border: none;
+
+}
+
+
+.label-form {
+	font-size: 0.8rem;
+}
+
+.form-input {
+	border: 1px solid #E5E7EB;
+	border-radius: 4px;
+}
+
 .input-form {
 	display: flex;
 	flex-direction: column;
-}
-
-fieldset {
-	gap: 1rem;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 fieldset > div {
@@ -77,4 +92,23 @@ a {
 	color: #158703;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.pass:invalid {
+	border-color: red;
+}
+
+.accept-btn {
+	background-color: #596D48;
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	padding-inline: 2rem;
+	border-radius: 10px;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.accept-btn:hover {
+	background-color: #8aa870;
 }
